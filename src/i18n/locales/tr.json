@@ -1,0 +1,44 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir şeyler yanlış gitti",
+    "retry": "Tekrar dene",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "close": "Kapat",
+    "search": "Ara",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "clear": "Temizle",
+    "apply": "Uygula",
+    "reset": "Sıfırla"
+  },
+  "navigation": {
+    "home": "Ana Sayfa",
+    "dashboard": "Gösterge Paneli",
+    "trends": "Trendler",
+    "compare": "Karşılaştır",
+    "settings": "Ayarlar",
+    "profile": "Profil",
+    "logout": "Çıkış Yap"
+  },
+  "theme": {
+    "light": "Açık",
+    "dark": "Koyu",
+    "toggle": "Tema değiştir"
+  },
+  "app": {
+    "title": "TrendPulse",
+    "description": "Gelişmiş trend analizi ve karşılaştırma platformu",
+    "welcome": "TrendPulse'a Hoş Geldiniz"
+  },
+  "errors": {
+    "pageNotFound": "Sayfa bulunamadı",
+    "serverError": "Sunucu hatası",
+    "networkError": "Ağ hatası",
+    "validationError": "Doğrulama hatası"
+  }
+}

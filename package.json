@@ -1,25 +1,76 @@
 {
-  "name": "trendpulse",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "Modern Next.js 15 boilerplate with TypeScript, Styled Components, and sophisticated animations",
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "styled-components",
+    "boilerplate",
+    "react",
+    "anime.js",
+    "i18n"
+  ],
+  "author": "Kağan Küçük <kagan@kaankucuk.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaankucukx/nextjs-boilerplate.git"
+  },
+  "homepage": "https://github.com/kaankucukx/nextjs-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/kaankucukx/nextjs-boilerplate/issues"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky",
+    "clean": "rm -rf .next node_modules pnpm-lock.yaml",
+    "clean:install": "pnpm clean && pnpm install",
+    "fresh": "pnpm clean:install && pnpm dev"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.84.1",
+    "@types/animejs": "^3.1.13",
+    "animejs": "^4.1.2",
+    "next": "15.4.5",
+    "next-intl": "^4.3.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.5"
+    "styled-components": "^6.1.19",
+    "zustand": "^5.0.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tanstack/react-query-devtools": "^5.84.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
     "eslint": "^9",
+    "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-next": "15.4.5",
-    "@eslint/eslintrc": "^3"
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.4",
+    "prettier": "^3.6.2",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   }
 }
